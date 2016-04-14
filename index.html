@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Dropdown</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <ul>
+      <li><a href="#" data-action="dropdown" data-target="#drop1">Click me</a>
+      </li>
+      <li><a href="#" data-action="dropdown" data-style="bubble" data-target="#drop2">Click me, too!</a>
+      </li>
+  </ul>
+  <div class="description">To add dropdown, simply add a div with the class <code data-action="dropdown" data-style="bubble" data-target="#drop3">dropdown</code> or <code>dropdown-bubble</code> and a unique id (which can be anything). Then, give <code>data-action</code> and <code>data-target</code> attribute to any element with values: <code>dropdown</code> (or <code>dropdown-bubble</code>) and <code>#targetid</code>
+
+      <p>Happy "playing"!</p>
+      <p>**HINT**
+          <br>Click on first <code>dropdown</code> to see dropdown in action on some other tag than <code>&lt;a&gt;</code>.</p>
+  </div>
+  <div class="dropdown" id="drop1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima hic.</div>
+  <div class="dropdown-bubble" id="drop2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptas soluta quidem? Possimus voluptatum ipsum laborum blanditiis eaque vel magni id velit reprehenderit rerum facere illum natus voluptates officiis iusto?</div>
+  <div class="dropdown-bubble" id="drop3">Just some dummy text...</div>
+
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/simple-dropdown.js"></script>
+</body>
+</html>
